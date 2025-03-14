@@ -1,0 +1,6 @@
+POST http://34.155.192.120/test
+
+{"minTimeMillis":100,
+"maxTimeMillis":200,
+"cpuSensitivity":1.0,
+"burn":true}
