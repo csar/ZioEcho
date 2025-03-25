@@ -15,7 +15,7 @@ object Run extends ZIOAppDefault:
     .out[ProbeResponse]
 
   private val health =
-    Endpoint(RoutePattern.GET / "healthcheck").out[ProbeResponse]
+    Endpoint(RoutePattern.GET / "test" / "healthcheck").out[ProbeResponse]
 
   def healthResponse() = for {
     count <- InvocationCounter.current
